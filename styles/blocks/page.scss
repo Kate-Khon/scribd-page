@@ -5,7 +5,8 @@
   font-family: 'Mitr';
 
   @include onMobile {
+    box-sizing: border-box;
     padding: 0 10px;
-    width: fit-content;
+    max-width: 100vw;
   }
 }

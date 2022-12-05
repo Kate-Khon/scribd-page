@@ -439,7 +439,9 @@
     gap: 20px;
 
     @include onMobile {
+      margin: 0 auto 40px;
       display: flex;
+      max-width: 340px;
       justify-content: space-between;
     }
   }
@@ -486,7 +488,9 @@
     display: block;
 
     @include onMobile {
+      margin: 0 auto 10px;
       padding: 17px 30px;
+      width: 340px;
     }
   }
 
