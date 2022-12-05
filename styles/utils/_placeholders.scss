@@ -1,0 +1,55 @@
+%button {
+  padding: 17px 30px;
+  line-height: 36px;
+
+  font-family: 'Mitr', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+
+  color: #fff;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 10px;
+  
+  cursor: pointer;
+}
+
+%priceInfo {
+  margin: 0;
+  line-height: 24px;
+  color: $priceInfo-color;
+}
+
+%title {
+  line-height: 56.7px;
+  font-size: 54px;
+  font-weight: 400;
+  color: $title-color;
+}
+
+%subtitle {
+  line-height: 37.8px;
+  font-size: 36px;
+  font-weight: 400;
+  color: $subtitle-color;
+}
+
+%text {
+  line-height: 30px;
+  font-size: 20px;
+  color: $text-color;
+}
+
+%subscriptionSquare {
+  height: 70px;
+  width: 70px;
+  background-color: $sqare-color;
+  border-radius: 10px;
+}
+
+%formName {
+  margin-bottom: 11px;
+  line-height: 24px;
+  color: $title-color;
+}

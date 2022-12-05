@@ -1,0 +1,62 @@
+.header {
+  margin-bottom: 171px;
+  padding-top: 36px;
+  // background-color: aliceblue;
+
+  &__content {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    gap: 219px;
+  }
+
+  &__leftBlock {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    width: 458px;
+    height: 284px;
+    line-height: 71.4px;
+    font-size: 68px;
+    font-weight: 400;
+    color: $title-color;
+    text-transform: capitalize;
+    // background-color: pink;
+  }
+
+  &__ellipse {
+    position: absolute;
+    width: 336px;
+    height: 86px;
+    top: 188px;
+    left: -16px;
+    z-index: -1;
+  }
+
+  &__motto {
+    margin-bottom: 93px;
+    width: 458px;
+    height: 60px;
+    line-height: 30px;
+    font-size: 20px;
+    // background-color: pink;
+  }
+
+  &__button {
+    @extend %button;
+
+    margin-bottom: 10px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+
+  &__priceInfo {
+    @extend %priceInfo;
+  }
+
+  &__rightBlock {
+    padding-right: 70px;
+  }
+}

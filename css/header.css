@@ -1,0 +1,12 @@
+.header {
+  padding-top: 36px;
+  background-color: aliceblue;
+}
+
+.header__title {
+  width: 460px;
+  height: 284px;
+  font-size: 68px;
+  background-color: pink;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,41 @@
+.navigation {
+  margin: 0 auto 138px;
+  position: relative;
+  
+  width: 1260px;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border: 1px solid transparent;
+  // background-color: aqua;
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    // background-color: bisque;
+  }
+
+  &__el {
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+
+    &:last-child {
+      @extend %button;
+
+      margin-left: -50px;
+      padding: 17px 30px;
+      width: 80px;
+      height: 36px;
+    }
+  }
+}

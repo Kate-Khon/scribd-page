@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+.main__buttonForm, .main__buttonBest, .main__buttonSub, .navigation__el:last-child, .header__button {
+  padding: 17px 30px;
+  line-height: 36px;
+  font-family: "Mitr", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #2cd7Cb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main__priceBest, .main__priceSub, .header__priceInfo {
+  margin: 0;
+  line-height: 24px;
+  color: #95989b;
+}
+
+.main__titleForm, .main__titleBest, .main__titleInfo, .main__titleSub, .main__titleAbout {
+  line-height: 56.7px;
+  font-size: 54px;
+  font-weight: 400;
+  color: #2a3036;
+}
+
+.main__subtitleForm, .main__subtitleInfo {
+  line-height: 37.8px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #4a4f54;
+}
+
+.footer__el, .main__textInfo, .main__textAbout {
+  line-height: 30px;
+  font-size: 20px;
+  color: #75787c;
+}
+
+.main__squareSub {
+  height: 70px;
+  width: 70px;
+  background-color: #72cfc9;
+  border-radius: 10px;
+}
+
+.main__formName {
+  margin-bottom: 11px;
+  line-height: 24px;
+  color: #2a3036;
+}
+
+.page {
+  margin: auto;
+  padding: 0 90px;
+  width: 1440px;
+  font-family: Mitr;
+}
+
+.header {
+  margin-bottom: 171px;
+  padding-top: 36px;
+}
+.header__content {
+  margin: auto;
+  display: flex;
+  width: fit-content;
+  gap: 219px;
+}
+.header__leftBlock {
+  position: relative;
+}
+.header__title {
+  margin-bottom: 40px;
+  width: 458px;
+  height: 284px;
+  line-height: 71.4px;
+  font-size: 68px;
+  font-weight: 400;
+  color: #2a3036;
+  text-transform: capitalize;
+}
+.header__ellipse {
+  position: absolute;
+  width: 336px;
+  height: 86px;
+  top: 188px;
+  left: -16px;
+  z-index: -1;
+}
+.header__motto {
+  margin-bottom: 93px;
+  width: 458px;
+  height: 60px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.header__button {
+  margin-bottom: 10px;
+  padding-right: 65px;
+  padding-left: 65px;
+}
+.header__rightBlock {
+  padding-right: 70px;
+}
+
+.navigation {
+  margin: 0 auto 138px;
+  position: relative;
+  width: 1260px;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+}
+.navigation__logo {
+  cursor: pointer;
+}
+.navigation__list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 100px;
+}
+.navigation__el {
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.navigation__el:last-child {
+  margin-left: -50px;
+  padding: 17px 30px;
+  width: 80px;
+  height: 36px;
+}
+
+/* Customize the container */
+.container {
+  margin-left: 3px;
+  display: block;
+  position: relative;
+  padding-left: 18px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #f8f8f8;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2cd7Cb;
+  border-radius: 2px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid #ebf8f7;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main__about {
+  margin: 0 auto 100px;
+  display: flex;
+  width: fit-content;
+  gap: 180px;
+}
+.main__titleAbout {
+  margin: 0 0 50px;
+}
+.main__textAbout {
+  width: 460px;
+}
+.main__subscription {
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eefffe;
+}
+.main__titleSub {
+  margin: 30px auto 72px;
+}
+.main__listSub {
+  margin: 0 0 77px;
+  display: flex;
+  width: 870px;
+  justify-content: space-between;
+  list-style: none;
+  color: #2a3036;
+}
+.main__elSub {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+.main__logoSub {
+  position: absolute;
+  top: 21px;
+}
+.main__nameSub {
+  margin: 0;
+  line-height: 30px;
+}
+.main__buttonSub {
+  margin-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.main__priceSub {
+  margin-bottom: 21px;
+  text-align: center;
+}
+.main__info {
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+  gap: 180px;
+}
+.main__info--1 {
+  margin-bottom: 90px;
+}
+.main__info--2 {
+  margin-bottom: 100px;
+}
+.main__info--3 {
+  margin-bottom: 113px;
+  gap: 160px;
+}
+.main__imgInfoContainer {
+  width: 620px;
+  overflow: hidden;
+  box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.09);
+}
+.main__imgInfoContainer--1 {
+  height: 444px;
+}
+.main__imgInfoContainer--2 {
+  height: 350px;
+}
+.main__imgInfoContainer--3 {
+  position: relative;
+  box-shadow: none;
+}
+.main__imgInfo {
+  width: 620px;
+  transform: scale(110%);
+}
+.main__imgInfo--1 {
+  height: 444px;
+}
+.main__imgInfo--2 {
+  height: 350px;
+}
+.main__imgInfo--3 {
+  transform: none;
+}
+.main__playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__contentInfo {
+  position: relative;
+}
+.main__contentInfo--1 {
+  width: 454px;
+}
+.main__contentInfo--2 {
+  width: 460px;
+}
+.main__titleInfo {
+  margin: 0;
+}
+.main__titleInfo--1 {
+  margin-bottom: 13px;
+}
+.main__titleInfo--2 {
+  margin-bottom: 20px;
+}
+.main__titleInfo--3 {
+  margin-bottom: 45px;
+}
+.main__subtitleInfo--3 {
+  margin-bottom: 20px;
+}
+.main__textInfo {
+  margin: 0;
+}
+.main__textInfo--1 {
+  margin-bottom: 74px;
+}
+.main__textInfo--2 {
+  margin-bottom: 21px;
+  width: 456px;
+}
+.main__buttonInfo {
+  position: absolute;
+  right: 0;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #2cd7Cb;
+  gap: 14px;
+}
+.main__button {
+  line-height: 36px;
+  font-family: "Mitr";
+  font-size: 24px;
+  font-weight: 500;
+}
+.main__stores {
+  display: flex;
+  gap: 20px;
+}
+.main__bestsellers {
+  margin-bottom: 83px;
+}
+.main__titleBest {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main__imagesBest {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+.main__buttonBest {
+  margin: 0 auto 10px;
+  padding-left: 225px;
+  padding-right: 225px;
+  display: block;
+}
+.main__priceBest {
+  text-align: center;
+}
+.main__form {
+  margin: 0 auto 151px;
+  width: 1260px;
+  background-color: #ebf8f7;
+  border: 1px solid transparent;
+}
+.main__formContent {
+  margin: auto;
+  width: fit-content;
+}
+.main__titleForm {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__subtitleForm {
+  margin-bottom: 39px;
+  text-align: center;
+}
+.main__formLine {
+  margin-bottom: 30px;
+  display: block;
+  width: 460px;
+  height: 70px;
+  font-family: "Mitr";
+  font-size: 20px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  text-indent: 20px;
+}
+.main__formLine:last-child {
+  margin-bottom: 27px;
+}
+.main__formCheckbox {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 16px;
+}
+.main__checkboxText {
+  margin-top: 1px;
+  line-height: 18px;
+}
+.main__buttonForm {
+  margin-bottom: 28px;
+  display: block;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+.main__buttonForm--google {
+  padding: 0;
+  height: 70px;
+  background-color: transparent;
+}
+.main__signIn {
+  margin: 0 auto 18px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 30px;
+}
+.main__buttonSignIn {
+  background: none;
+  color: #2cd7Cb;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 235px;
+  background-color: #c3ebe8;
+}
+.footer__content {
+  margin-top: 41px;
+  width: 315px;
+}
+.footer__content:last-child {
+  margin-left: 174px;
+  width: 140px;
+}
+.footer__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer__select {
+  padding: 0 10px;
+  width: 140px;
+  height: 42px;
+  font-family: "Mitr";
+  font-size: 20px;
+  color: #fff;
+  background-color: #72cfc9;
+  border-color: transparent;
+  outline-color: #72cfc9;
+  border-radius: 10px;
+}
+.footer__list {
+  padding: 0;
+}
+.footer__el {
+  width: fit-content;
+  color: #4a4f54;
+  list-style: none;
+  cursor: pointer;
+}
+.footer__socialContainer {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+  border: 1px solid transparent;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.footer__stores {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+body {
+  margin: 0;
+  font-family: "Mitr", sans-serif;
+  cursor: default;
+}
+
+/*# sourceMappingURL=main.css.map */
