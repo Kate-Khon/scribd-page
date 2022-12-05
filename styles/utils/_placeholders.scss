@@ -17,6 +17,11 @@
   &:hover {
     background-color: $hover;
   }
+
+  @include onMobile {
+    margin: auto;
+    width: 318px;   
+  }
 }
 
 %priceInfo {
@@ -30,6 +35,11 @@
   font-size: 54px;
   font-weight: 400;
   color: $title-color;
+
+  @include onMobile {
+    line-height: 50px;
+    font-size: 48px;
+  }
 }
 
 %subtitle {
@@ -37,6 +47,11 @@
   font-size: 36px;
   font-weight: 400;
   color: $subtitle-color;
+
+  @include onMobile {
+    font-size: 24px;
+    line-height: 25px;
+  }
 }
 
 %text {
@@ -50,6 +65,13 @@
   width: 70px;
   background-color: $sqare-color;
   border-radius: 10px;
+
+  @include onMobile {
+    height: 30px;
+    width: 30px;
+
+    border-radius: 6px;
+  }
 }
 
 %store {
@@ -64,4 +86,12 @@
   margin-bottom: 11px;
   line-height: 24px;
   color: $title-color;
+}
+
+%mobileImg {
+  @include onMobile {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+  }
 }

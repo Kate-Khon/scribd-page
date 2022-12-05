@@ -2,16 +2,10 @@
   margin: auto;
   padding: 0 90px;
   width: 1440px;
-  font-family: Mitr;
-  // background-color: yellow;
+  font-family: 'Mitr';
 
-  // &::before {
-  //   position: absolute;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   content: '';
-  //   height: 480%;
-  //   width: 1260px;
-  //   background-color: rgba(0, 128, 0, 0.22);
-  // }
+  @include onMobile {
+    padding: 0 10px;
+    width: fit-content;
+  }
 }

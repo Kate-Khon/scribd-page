@@ -4,18 +4,38 @@
     display: flex;
     width: fit-content;
     gap: 180px;
+
+    @include onMobile {
+      margin: 0 auto;
+      flex-direction: column;
+      width: 320px;
+      gap: 16px;
+    }
+  }
+
+  &__photoAbout {
+    @extend %mobileImg;
   }
 
   &__titleAbout {
     margin: 0 0 50px;
 
     @extend %title;
+
+    @include onMobile {
+      margin-bottom: 8px;
+      width: 320px;
+    }
   }
 
   &__textAbout {
     @extend %text;
 
     width: 460px;
+
+    @include onMobile {
+      width: 320px;
+    }
   }
 
   &__subscription {
@@ -24,12 +44,24 @@
     flex-direction: column;
     align-items: center;
     background-color: $accentBackground-color;
+
+    @include onMobile {
+      box-sizing: border-box;
+      margin: 0 auto 38px;
+      padding: 40px;
+      width: 360px;
+      left: 35px; 
+    }
   }
 
   &__titleSub {
     margin: 30px auto 72px;
 
     @extend %title;
+
+    @include onMobile {
+      margin-bottom: 48px;
+    }
   }
 
   &__listSub {
@@ -40,6 +72,13 @@
     justify-content: space-between;
     list-style: none;
     color: $title-color;
+
+    @include onMobile {
+      margin-bottom: 20px;
+      padding: 0;
+      width: 320px;
+      flex-wrap: wrap;
+    }
   }
 
   &__elSub {
@@ -54,6 +93,12 @@
     &:hover {
       transform: scale(1.15);
     }
+
+    @include onMobile {
+      margin-bottom: 38px;
+      flex-basis: 30%;
+      gap: 6px 
+    }
   }
 
   &__squareSub {
@@ -63,6 +108,12 @@
   &__logoSub {
     position: absolute;
     top: 21px;
+
+    @include onMobile {
+      top: 7px;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__nameSub {
@@ -77,6 +128,11 @@
 
     padding-left: 65px;
     padding-right: 65px;
+
+    @include onMobile {
+      padding: 17px 30px;
+      width: 280px;
+    }
   }
 
   &__priceSub {
@@ -85,6 +141,10 @@
     @extend %priceInfo;
 
     text-align: center;
+
+    @include onMobile {
+      width: 360px;
+    }
   }
 
   &__info {
@@ -93,17 +153,34 @@
     width: fit-content;
     gap: 180px;
 
+    @include onMobile {
+      width: 320px;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
     &--1 {
       margin-bottom: 90px;
     }
 
     &--2 {
       margin-bottom: 100px;
+
+      @include onMobile {
+        margin-bottom: 0;
+        flex-direction: column-reverse;
+      }
     }
 
     &--3 {
       margin-bottom: 113px;
       gap: 160px;
+
+      @include onMobile {
+        margin-bottom: 32px;
+        gap: 10px;
+      }
     }
   }
 
@@ -114,15 +191,31 @@
 
     &--1 {
       height: 444px;
+
+      @extend %mobileImg;
+
+      @include onMobile {
+        display: none;
+      }
     }
 
     &--2 {
       height: 350px;
+
+      @include onMobile {
+        width: 320px;
+        height: fit-content;
+      }
     }
 
     &--3 {
       position: relative;
       box-shadow: none;
+
+      @include onMobile {
+        width: 320px;
+        height: fit-content;
+      }
     }
   }
 
@@ -136,10 +229,26 @@
 
     &--2 {
       height: 350px;
+
+      @include onMobile {
+        margin: auto;
+        display: block;
+        width: 300px;
+        height: 220px;
+        object-fit: cover;
+      }
     }
 
     &--3 {
       transform: none;
+
+      @include onMobile {
+        margin: auto;
+        display: block;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
     }
   }
 
@@ -169,14 +278,29 @@
 
     &--1 {
       margin-bottom: 13px;
+
+      @include onMobile {
+        margin: 0 auto 15px;
+        width: 320px;
+      }
     }
 
     &--2 {
       margin-bottom: 20px;
+
+      @include onMobile {
+        margin: 0 auto 15px;
+        width: 320px;
+      }
     }
 
     &--3 {
       margin-bottom: 45px;
+
+      @include onMobile {
+        margin: 0 auto -10px;
+        width: 320px;
+      }
     }
   }
 
@@ -185,6 +309,11 @@
 
     &--3 {
       margin-bottom: 20px;
+
+      @include onMobile {
+        margin-bottom: 8px;
+        width: 240px;
+      }
     }
   }
 
@@ -195,11 +324,21 @@
 
     &--1 {
       margin-bottom: 74px;
+
+      @include onMobile {
+        margin: auto;
+        width: 320px;
+      }
     }
 
     &--2 {
       margin-bottom: 21px;
       width: 456px;
+
+      @include onMobile {
+        margin: auto;
+        width: 320px;
+      }
     }
   }
 
@@ -235,6 +374,12 @@
         background-color: $accent-color;
       }
     }
+
+    @include onMobile {
+      margin: 0 auto -58px;
+      padding: 40px;
+      position: relative;
+    }
   }
 
   &__button {
@@ -247,6 +392,11 @@
   &__stores {
     display: flex;
     gap: 20px;
+
+    @include onMobile {
+      margin: 50px auto;
+      width: 320px;
+    }
   }
 
   &__store {
@@ -255,6 +405,10 @@
 
   &__bestsellers {
     margin-bottom: 83px;
+
+    @include onMobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__titleBest {
@@ -263,12 +417,42 @@
     @extend %title;
 
     text-align: center;
+
+    @include onMobile {
+      margin: 0 auto 28px;
+      width: 320px;
+    }
   }
 
   &__imagesBest {
     margin-bottom: 40px;
     display: flex;
     gap: 20px;
+
+    @include onMobile {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__imageBest {
+    @include onMobile {
+      display: none;
+      height: 152.3px;
+      width: 100px;
+
+      &:nth-child(2) {
+        display: block;
+      }
+
+      &:nth-child(3) {
+        display: block;
+      }
+
+      &:nth-child(4) {
+        display: block;
+      }
+    }
   }
 
   &__buttonBest {
@@ -279,6 +463,10 @@
     padding-left: 225px;
     padding-right: 225px;
     display: block;
+
+    @include onMobile {
+      padding: 17px 30px;
+    }
   }
 
   &__priceBest {
@@ -292,11 +480,22 @@
     width: 1260px;
     background-color: #ebf8f7;
     border: 1px solid transparent;
+
+    @include onMobile {
+      margin-bottom: 10px;
+      width: 360px;
+    }
   }
 
   &__formContent {
     margin: auto;
     width: fit-content;
+
+    @include onMobile {
+      box-sizing: border-box;
+      padding: 20px;
+      width: 320px;
+    }
   }
 
   &__titleForm {
@@ -306,6 +505,10 @@
     @extend %title;
 
     text-align: center;
+
+    @include onMobile {
+      text-align: start;
+    }
   }
 
   &__subtitleForm {
@@ -314,6 +517,10 @@
     @extend %subtitle;
 
     text-align: center;
+
+    @include onMobile {
+      text-align: start;
+    }
   }
 
   &__formName {
@@ -334,6 +541,14 @@
 
     &:last-child {
       margin-bottom: 27px;
+    }
+
+    &::placeholder {
+      color: $priceInfo-color;
+    }
+
+    @include onMobile {
+      width: 270px;
     }
   }
 
@@ -357,14 +572,36 @@
     padding-left: 145px;
     padding-right: 145px;
 
+    @include onMobile {
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 17px 30px;
+      width: 270px;
+    }
+
     &--google {
       padding: 0;
       height: 70px;
       background-color: #fff;
 
+      @include onMobile {
+        margin: 0;
+        margin-bottom: 18px;
+        width: 270px;
+        overflow: hidden;
+      }
+
       &:hover {
         background-color: #c8dbec;
       }
+    }
+  }
+
+  &__signInGoogle {
+    @include onMobile {
+      margin-left: -48px;
+      vertical-align: middle;
+      width: 370px;
     }
   }
 
@@ -373,6 +610,12 @@
     width: fit-content;
     font-size: 20px;
     line-height: 30px;
+
+    @include onMobile {
+      margin: 0;
+      text-indent: 3px;
+      font-size: 16px;
+    }
   }
 
   &__buttonSignIn {

@@ -2,11 +2,22 @@
   margin-bottom: 171px;
   padding-top: 36px;
 
+  @include onMobile {
+    margin-bottom: 100px;
+    padding-top: 10px;
+  }
+
   &__content {
     margin: auto;
     display: flex;
     width: fit-content;
     gap: 219px;
+
+    @include onMobile {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 10px;
+    }
   }
 
   &__leftBlock {
@@ -22,6 +33,14 @@
     font-weight: 400;
     color: $title-color;
     text-transform: capitalize;
+
+    @include onMobile {
+      margin: 0;
+      width: 280px;
+      height: fit-content;
+      line-height: 42px;
+      font-size: 36px;
+    }
   }
 
   &__ellipse {
@@ -31,6 +50,12 @@
     top: 188px;
     left: -16px;
     z-index: -1;
+
+    @include onMobile {
+      top: 66px;
+      left: -10px;
+      width: 179.8px;
+    }
   }
 
   &__motto {
@@ -39,6 +64,11 @@
     height: 60px;
     line-height: 30px;
     font-size: 20px;
+
+    @include onMobile {
+      margin-bottom: 50px;
+      width: 300px; 
+    }
   }
 
   &__button {
@@ -55,5 +85,17 @@
 
   &__rightBlock {
     padding-right: 70px;
+
+    @include onMobile {
+      padding: 0;
+    }
+  }
+
+  &__rightBlockPhoto {
+    @include onMobile {
+      padding: 0;
+      width: 298.8px;
+      height: 355.3x;
+    }
   }
 }

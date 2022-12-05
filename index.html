@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scribd</title>
+  <link rel="icon" href="./images/icon.svg">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
       <nav class="navigation header__nav">
-        <a href="/" class="navigation__logo">
+        <a class="navigation__logo">
           <img class="navigation__logo" src="./images/main-logo.svg" alt="scribd logo">
         </a>
 
@@ -36,7 +37,7 @@
         </div>
         
         <div class="header__rightBlock">
-          <img src="./images/photos/photo-1.png" alt="person with book">
+          <img class="header__rightBlockPhoto" src="./images/photos/photo-1.png" alt="person with book">
         </div>
       </div>
     </header>
@@ -155,12 +156,12 @@
       <div class="main__bestsellers">
         <h2 class="main__titleBest">Bestsellers Are Waiting For You</h2>
         <div class="main__imagesBest">
-          <img src="./images/bestsellers/1.png" alt="">
-          <img src="./images/bestsellers/2.png" alt="">
-          <img src="./images/bestsellers/3.png" alt="">
-          <img src="./images/bestsellers/4.png" alt="">
-          <img src="./images/bestsellers/5.png" alt="">
-          <img src="./images/bestsellers/6.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/1.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/2.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/3.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/4.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/5.png" alt="">
+          <img class="main__imageBest" src="./images/bestsellers/6.png" alt="">
         </div>
 
         <button class="main__buttonBest">Try it for free</button>
@@ -185,42 +186,49 @@
         <div class="main__formContent">
           <h2 class="main__titleForm">Sign Up</h2>
           <h3 class="main__subtitleForm">and Try Free Subscribe</h3>
-          <form action="">
-
+          <form action="URL" method="post">
+            <p class="main__formName">Name</p>
+            <input 
+              class="main__formLine" 
+              type="text" 
+              placeholder="Michael Jordan"
+              title="Username should only contain latin letters."
+              pattern="[A-z]{1,15}"
+              required
+            >
+            <p class="main__formName">Email</p>
+            <input 
+              class="main__formLine" 
+              type="email"
+              title="Please, enter a valid email adress."
+              pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="example123@gmail.com"
+              required
+            >
+            <p class="main__formName">Password</p>
+            <input 
+              class="main__formLine" 
+              type="password"
+              title="
+                Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+              "
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              placeholder="•••••••••••"
+              required
+            >
+            <div class="main__formCheckbox">
+              <label class="container">
+                <input type="checkbox" checked="checkmark">
+                <span class="checkmark"></span>
+              </label>
+              <span class="main__formName main__checkboxText">Send me updates from Scribd</span>
+            </div>
+  
+            <button class="main__buttonForm">Try it for free</button>
+            <button class="main__buttonForm main__buttonForm--google">
+              <img class="main__signInGoogle" src="./images/googleSignIn.svg" alt="">
+            </button>
           </form>
-          <p class="main__formName">Name</p>
-          <input 
-            class="main__formLine" 
-            type="text" 
-            placeholder="Michael Jordan"
-            required
-          >
-          <p class="main__formName">Email</p>
-          <input 
-            class="main__formLine" 
-            type="text" 
-            placeholder="example123@gmail.com"
-            required
-          >
-          <p class="main__formName">Password</p>
-          <input 
-            class="main__formLine" 
-            type="password" 
-            placeholder="•••••••••••"
-            required
-          >
-          <div class="main__formCheckbox">
-            <label class="container">
-              <input type="checkbox" checked="checkmark">
-              <span class="checkmark"></span>
-            </label>
-            <span class="main__formName main__checkboxText">Send me updates from Scribd</span>
-          </div>
-
-          <button class="main__buttonForm">Try it for free</button>
-          <button class="main__buttonForm main__buttonForm--google">
-            <img src="./images/googleSignIn.svg" alt="">
-          </button>
           <div class="main__signIn">
             <span>Already have an account?</span>
             <button class="main__buttonSignIn">Sign In</button>

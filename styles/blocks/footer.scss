@@ -4,6 +4,13 @@
   height: 235px;
   background-color: #c3ebe8;
 
+  @include onMobile {
+    width: 362px;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+
   &__content {
     margin-top: 41px;
     width: 315px;
@@ -11,6 +18,12 @@
     &:last-child {
       margin-left: 174px;
       width: 140px;
+
+      @include onMobile {
+        margin-left: 0;
+        margin-bottom: 30px;
+        width: 315px;
+      }
     }
   }
 
@@ -112,6 +125,10 @@
     display: flex;
     flex-direction: column;
     gap: 19px;
+
+    @include onMobile {
+      flex-direction: row;
+    }
   }
 
   &__store {
