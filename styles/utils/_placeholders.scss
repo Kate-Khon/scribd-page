@@ -10,9 +10,13 @@
   color: #fff;
   background-color: $accent-color;
   border: none;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
   cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $hover;
+  }
 }
 
 %priceInfo {
@@ -46,6 +50,14 @@
   width: 70px;
   background-color: $sqare-color;
   border-radius: 10px;
+}
+
+%store {
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 %formName {

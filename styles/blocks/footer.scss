@@ -15,11 +15,31 @@
   }
 
   &__subtitle {
+    position: relative;
     margin: 0;
     margin-bottom: 15px;
+    width: fit-content;
     line-height: 30px;
     font-size: 20px;
     font-weight: 400;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: transparent;
+      left: -15px;
+      right: -15px;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        right: 0;
+        background-color: $accent-color;
+      }
+    }
   }
 
   &__select {
@@ -33,6 +53,7 @@
     border-color: transparent;
     outline-color: $sqare-color;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   &__list {
@@ -42,10 +63,32 @@
   &__el {
     @extend %text;
 
+    position: relative;
     width: fit-content;
     color: $subtitle-color;
     list-style: none;
     cursor: pointer;
+    transition: all 0.5s;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: transparent;
+      left: -15px;
+      right: -15px;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      transform: translateX(10px);
+      
+      &::before {
+        left: -10px;
+        right: 0;
+        background-color: $subtitle-color;
+      }
+    }
   }
 
   &__socialContainer {
@@ -61,9 +104,17 @@
     gap: 28px;
   }
 
+  &__socialEl {
+    @extend %store;
+  }
+
   &__stores {
     display: flex;
     flex-direction: column;
     gap: 19px;
+  }
+
+  &__store {
+    @extend %store;
   }
 }

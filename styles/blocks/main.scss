@@ -49,6 +49,11 @@
     align-items: center;
     text-align: center;
     gap: 25px;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 
   &__squareSub {
@@ -123,7 +128,7 @@
 
   &__imgInfo {
     width: 620px;
-    transform: scale(110%);
+    transform: scale(1.1);
 
     &--1 {
       height: 444px;
@@ -209,7 +214,27 @@
     background-color: transparent;
     border: none;
     color: $accent-color;
+    cursor: pointer;
     gap: 14px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: transparent;
+      left: -10px;
+      right: -10px;
+      top: 0;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      &::before {
+        left: 6px;
+        right: 47px;
+        background-color: $accent-color;
+      }
+    }
   }
 
   &__button {
@@ -222,6 +247,10 @@
   &__stores {
     display: flex;
     gap: 20px;
+  }
+
+  &__store {
+    @extend %store;
   }
 
   &__bestsellers {
@@ -331,7 +360,11 @@
     &--google {
       padding: 0;
       height: 70px;
-      background-color: transparent;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #c8dbec;
+      }
     }
   }
 
@@ -343,6 +376,7 @@
   }
 
   &__buttonSignIn {
+    position: relative;
     background: none;
     color: $accent-color;
     border: none;
@@ -350,5 +384,24 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: transparent;
+      left: -10px;
+      right: -10px;
+      bottom: -4px;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      &::after {
+        left: 0;
+        right: 0;
+        background-color: $accent-color;
+      }
+    }
   }
 }
