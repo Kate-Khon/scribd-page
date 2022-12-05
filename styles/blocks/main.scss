@@ -14,6 +14,7 @@
   }
 
   &__photoAbout {
+    @extend %scaleImage;
     @extend %mobileImg;
   }
 
@@ -185,6 +186,8 @@
   }
 
   &__imgInfoContainer {
+    @extend %scaleImage;
+
     width: 620px;
     overflow: hidden;
     box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.09);
@@ -210,7 +213,13 @@
 
     &--3 {
       position: relative;
+      height: 351px;
       box-shadow: none;
+
+      &:hover {
+        box-shadow: 0px 1px 21px $accent-color;
+        transform: none;
+      }
 
       @include onMobile {
         width: 320px;
@@ -218,7 +227,7 @@
       }
     }
   }
-
+ 
   &__imgInfo {
     width: 620px;
     transform: scale(1.1);
@@ -436,6 +445,18 @@
   }
 
   &__imageBest {
+    @extend %scaleImage;
+
+    cursor: pointer;
+
+    &:first-child {
+      transform: none;
+    }
+
+    &:last-child {
+      transform: none;
+    }
+
     @include onMobile {
       display: none;
       height: 152.3px;

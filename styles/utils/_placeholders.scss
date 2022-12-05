@@ -88,6 +88,20 @@
   color: $title-color;
 }
 
+%scaleImage {
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include onMobile {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
 %mobileImg {
   @include onMobile {
     width: 320px;

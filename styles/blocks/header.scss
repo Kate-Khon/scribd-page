@@ -84,6 +84,7 @@
   }
 
   &__rightBlock {
+    @extend %scaleImage;
     padding-right: 70px;
 
     @include onMobile {
