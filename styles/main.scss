@@ -9,6 +9,7 @@
 @import './blocks/footer.scss';
 
 body {
+  box-sizing: border-box;
   margin: 0;
   font-family: 'Mitr', sans-serif;
   cursor: default;

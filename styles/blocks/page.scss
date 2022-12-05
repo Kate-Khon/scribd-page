@@ -5,8 +5,10 @@
   font-family: 'Mitr';
 
   @include onMobile {
+    margin: 0;
     box-sizing: border-box;
     padding: 0 10px;
     max-width: 100vw;
+    overflow: hidden;
   }
 }
